@@ -1,0 +1,32 @@
+{
+  "name": "todo-odin",
+  "version": "1.0.0",
+  "description": "TODO List TOP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch dist/style.scss:dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnimeshRy/ToDo-Odin.git"
+  },
+  "keywords": [
+    "TOP"
+  ],
+  "author": "AnimeshRy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnimeshRy/ToDo-Odin/issues"
+  },
+  "homepage": "https://github.com/AnimeshRy/ToDo-Odin#readme",
+  "devDependencies": {
+    "css-loader": "^5.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "sass": "^1.30.0"
+  }
+}
