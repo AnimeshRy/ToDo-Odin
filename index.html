@@ -29,14 +29,14 @@
         </form>
     </div>
 
-    <div class="todo-list">
+    <div class="todo-list" data-list-display-container>
         <div class="todo-header">
-            <h2 class="list-title">YouTube</h2>
-            <p class="task-count">3 tasks remaining</p>
+            <h2 class="list-title" data-list-title>YouTube</h2>
+            <p class="task-count" data-list-count>3 tasks remaining</p>
         </div>
         
         <div class="todo-body">
-            <div class="tasks">
+            <div class="tasks" data-tasks>
                 <div class="task">
                     <input type="checkbox" id="task-1">
                     <label for="task-1">
@@ -58,8 +58,8 @@
             </div>
             
             <div class="new-task-creator">
-                <form action="">
-                    <input type="text" class="new task" placeholder="Add new list" aria-label="new task name">
+                <form action="" data-new-task-form>
+                    <input type="text" class="new task" placeholder="Add new list" aria-label="new task name" data-new-task-input>
                 <button class="btn create" aria-label="create new list">+</button>
                 </form>
             </div>
@@ -70,7 +70,13 @@
         </div>
 
 
-        
+        <template id="task-template">
+            <div class="task">
+                <input type="checkbox"/>
+                <label > 
+                    <span class="custom-checkbox"></span></label>
+            </div>
+        </template>
     </div>
 </body>
 </html>
