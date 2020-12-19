@@ -1,6 +1,3 @@
-// Add this to your javascript file
-
-/* Body */
 const body = document.querySelector('body');
 
 // Dark Mode Action

@@ -1,3 +1,5 @@
+import {format} from 'date-fns'
+
 const listsContainer = document.querySelector('[data-lists]')
 const newListForm = document.querySelector('[data-new-list-form]')
 const newListInput = document.querySelector('[data-new-list-input]')
@@ -50,7 +52,7 @@ newListForm.addEventListener('submit', e => {
     const listName = newListInput.value;
     // check if input is empty
     if (listName == null || listName === '') return;
-    const list = createList(listName)
+    const list = createList(`${listName} - ${format(Date.now(), 'iiii')}`)
     newListInput.value = null
     lists.push(list)
     saveAndRender();

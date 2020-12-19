@@ -1,48 +1,51 @@
-// Add this to your javascript file
+// // Add this to your javascript file
 
-/* Body */
-const body = document.querySelector('body');
+// /* Body */
 
-// Dark Mode Action
-let darkMode = localStorage.getItem("darkMode");
-const darkModeToggle = document.querySelector('.dark-mode-button');
-const darkModeToggleFooter = document.querySelector('footer .dark-mode-button');
+// export const darkMode = () => {
+//     const body = document.querySelector('body');
 
-// Enable Dark Mode
-const enableDarkMode = () => {
-    body.classList.add("dark-mode");
-    localStorage.setItem("darkMode", "enabled")
-}
+// // Dark Mode Action
+// let darkMode = localStorage.getItem("darkMode");
+// const darkModeToggle = document.querySelector('.dark-mode-button');
+// const darkModeToggleFooter = document.querySelector('footer .dark-mode-button');
 
-// Disable Dark Mode
-const disableDarkMode = () => {
-    body.classList.remove("dark-mode");
-    localStorage.setItem("darkMode", null)
-}
+// // Enable Dark Mode
+// const enableDarkMode = () => {
+//     body.classList.add("dark-mode");
+//     localStorage.setItem("darkMode", "enabled")
+// }
 
-if (darkMode == "enabled") {
-    enableDarkMode();
-}
+// // Disable Dark Mode
+// const disableDarkMode = () => {
+//     body.classList.remove("dark-mode");
+//     localStorage.setItem("darkMode", null)
+// }
 
-// Desktop Button
-darkModeToggle.addEventListener('click', () => {
-    darkMode = localStorage.getItem("darkMode");
-    if (darkMode !== "enabled") {
-        enableDarkMode();
-    } else {
-        disableDarkMode();
-    }
-})
+// if (darkMode == "enabled") {
+//     enableDarkMode();
+// }
 
-// Footer button, optional. This is for if you have a second dark mode toggle button
-//in the footer, just make sure the button is inside the footer tag, and it will be
-//linked to this function.
+// // Desktop Button
+// darkModeToggle.addEventListener('click', () => {
+//     darkMode = localStorage.getItem("darkMode");
+//     if (darkMode !== "enabled") {
+//         enableDarkMode();
+//     } else {
+//         disableDarkMode();
+//     }
+// })
 
-    darkModeToggleFooter.addEventListener('click', () => {
-        darkMode = localStorage.getItem("darkMode");
-        if (darkMode !== "enabled") {
-            enableDarkMode();
-        } else {
-            disableDarkMode();
-        }
-    })
+// // Footer button, optional. This is for if you have a second dark mode toggle button
+// //in the footer, just make sure the button is inside the footer tag, and it will be
+// //linked to this function.
+
+//     darkModeToggleFooter.addEventListener('click', () => {
+//         darkMode = localStorage.getItem("darkMode");
+//         if (darkMode !== "enabled") {
+//             enableDarkMode();
+//         } else {
+//             disableDarkMode();
+//         }
+//     })
+// }

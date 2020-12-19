@@ -7,9 +7,17 @@ Todo lists are a staple in beginning webdev tutorials because they can be very s
 
 Checkout the site here - [Todo List](https://animeshry.github.io/ToDo-Odin/)
 
-### Todo List for The Odin Project (TOP)
+#### Clone Project -
+```
+git clone https://github.com/AnimeshRy/ToDo-Odin.git
+cd ToDo-Odin
+npm install
+```
 
-The Odin Project is one of those "What I wish I had when I was learning" resources. Not everyone has access to a computer science education or the funds to attend an intensive coding school and neither of those is right for everyone anyway. This project is designed to fill in the gap for people who are trying to hack it on their own but still want a high quality education.
+#### Recent Change - 
+- Added Current Day to List Names.
+  
+#### Todo List for The Odin Project (TOP)
 
-[About TOP](https://www.theodinproject.com/about)
+- [About TOP](https://www.theodinproject.com/about)
 
