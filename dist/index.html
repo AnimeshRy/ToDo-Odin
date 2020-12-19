@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO</title>
+    <title>ToDo - Odin</title>
     <link
     href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap"
     rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark.css">
     <!-- <script src="main.js"></script> -->
     <script src="app.js" defer></script>
+    <script src="dark.js" defer></script>
 </head>
 <body>
     <h1 class="title">ToDo List 🐯 Odin</h1>
@@ -28,8 +30,8 @@
 
     <div class="todo-list" data-list-display-container>
         <div class="todo-header">
-            <h2 class="list-title" data-list-title>YouTube</h2>
-            <p class="task-count" data-list-count>3 tasks remaining</p>
+            <h2 class="list-title" data-list-title></h2>
+            <p class="task-count" data-list-count> </p>
         </div>
         
         <div class="todo-body">
@@ -57,5 +59,10 @@
             </div>
         </template>
     </div>
+    <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
+        <span aria-hidden="true" class="dark-toggle">
+            <span class="DTspan"></span>
+        </span>
+    </button>
 </body>
 </html>

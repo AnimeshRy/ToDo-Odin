@@ -76,9 +76,7 @@ function createTask(name) {
 
 function createList(name) {
     return {
-        id:Date.now().toString(), name:name, tasks: [{
-            id:'Test', name:'Test Task', complete: true
-        }]
+        id:Date.now().toString(), name:name, tasks: []
     }
 }
 
