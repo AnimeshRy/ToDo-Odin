@@ -97,11 +97,11 @@ function render() {
     clearElement(listsContainer)
     renderLists();
 
-    const selectedList = lists.find(list => list.id === selectedListId)
     if (selectedListId == null) {
         listDisplayContainer.style.display = 'none';
     } else {
         listDisplayContainer.style.display = '';
+        const selectedList = lists.find(list => list.id === selectedListId)
         listTitleElement.innerText = selectedList.name;
         renderTaskCount(selectedList)
     }
